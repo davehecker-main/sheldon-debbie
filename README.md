@@ -63,3 +63,5 @@ The command files assume a subagent-capable environment with `Agent` and `SendMe
 ## Notes
 
 These definitions were extracted from a project-local setup and cleaned for general use. Review them before installing if your repository has strict rules about agents, shell access, or issue tracker writes.
+
+Best use case: consult Debbie and Sheldon before opening a new issue, expanding scope, or going down a rabbit hole that might cost more effort than it returns.
