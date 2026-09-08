@@ -1,6 +1,6 @@
 # Sheldon and Debbie
 
-![Sheldon and Debbie](assets/sheldon-debbie.jpg)
+<img src="assets/sheldon-debbie.jpg" alt="Sheldon and Debbie" width="360">
 
 Portable advisor-agent definitions for Codex and Claude-style agent setups.
 
