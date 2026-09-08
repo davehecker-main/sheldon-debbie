@@ -60,6 +60,36 @@ In Claude-style setups, use:
 
 The command files assume a subagent-capable environment with `Agent` and `SendMessage` semantics. If your local harness differs, keep the agent files and adapt only the command wiring.
 
+## How Consults Are Passed
+
+Debbie and Sheldon work best when they are handed the situation as evidence, not as a persuasive summary. The Claude command files use a shared three-part consult payload:
+
+1. **The user's message, verbatim.** The exact slash-command argument is copied into a fenced block. This lets the agent distinguish what the user actually asked from how the calling assistant frames the work.
+2. **Sources by address.** Files, issue numbers, pull requests, commits, logs, or plans are listed as things the agent should open and inspect directly. The caller should name sources, not summarize them.
+3. **The caller's account.** The calling assistant adds only the context that is not available in a readable source: what was already tried, what was rejected, and any conversation constraint the agent cannot otherwise see.
+
+That structure is the point. Debbie is supposed to challenge whether work is worth doing before time is spent. Sheldon is supposed to answer from files, facts, and first principles. If either one receives only a tidy summary, they are judging the summary instead of the situation.
+
+Example payload:
+
+```text
+User typed this, verbatim:
+
+````
+should we open an issue for this helper cleanup?
+````
+
+Sources — read these yourself:
+- scripts/helper.mjs
+- tests/ui/helper.test.jsx
+- #123
+
+Claude's account — our words, not the user's:
+- The helper has one known caller.
+- The alternative is deleting it instead of improving it.
+- No production bug has been reported.
+```
+
 ## Notes
 
 These definitions were extracted from a project-local setup and cleaned for general use. Review them before installing if your repository has strict rules about agents, shell access, or issue tracker writes.
