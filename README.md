@@ -1,5 +1,7 @@
 # Sheldon and Debbie
 
+![Sheldon and Debbie](assets/sheldon-debbie.jpg)
+
 Portable advisor-agent definitions for Codex and Claude-style agent setups.
 
 - **Sheldon** is a read-only technical advisor: precise, evidence-oriented, and useful for questions about quality, architecture, testing, and tradeoffs.
