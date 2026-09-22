@@ -8,3 +8,5 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: sh tests/install.sh
+      - run: sh tests/profile-selection.sh
+      - run: node tests/contracts.mjs

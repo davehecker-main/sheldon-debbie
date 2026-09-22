@@ -17,7 +17,7 @@ The backup-aware installer writes the Claude command `/consult`, the Codex skill
 - Claude: `/consult <natural-language request>`
 - Codex: mention the request naturally or invoke `$consult`
 
-The paired workflow always sends both advisors the same evidence and relays both answers verbatim.
+The paired workflow always sends both advisors the same evidence and relays both answers verbatim. ShareView checkouts and worktrees select the preserved ShareView advisor contracts; other repositories use the general profile.
 
 ## Documentation
 
