@@ -1,0 +1,9 @@
+interface:
+  display_name: "Debbie and Sheldon"
+  short_description: "Test whether proposed work is worthwhile and sound"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#82566B"
+  default_prompt: "Use $consult to ask Debbie and Sheldon for independent judgments on this proposal."
+policy:
+  allow_implicit_invocation: true

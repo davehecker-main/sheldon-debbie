@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Sheldon & Debbie</title>
+  <desc id="desc">Identity artwork for Sheldon & Debbie</desc>
+  <rect width="1200" height="630" rx="48" fill="#F4F1E8"/>
+  <circle cx="270" cy="315" r="190" fill="#82566B"/>
+  <circle cx="270" cy="315" r="158" fill="none" stroke="#F4F1E8" stroke-width="5" opacity=".7"/>
+  <path d="M120 500 C330 405 385 180 560 130 S900 155 1080 70" fill="none" stroke="#82566B" stroke-width="18" stroke-linecap="round" opacity=".22"/>
+  <text x="270" y="350" text-anchor="middle" font-family="Georgia, serif" font-size="118" font-weight="700" fill="#F4F1E8">S+D</text>
+  <text x="520" y="300" font-family="Georgia, serif" font-size="72" font-weight="700" fill="#1B2D2A">Sheldon & Debbie</text>
+  <text x="525" y="355" font-family="system-ui, sans-serif" font-size="25" letter-spacing="5" fill="#82566B">PERSONAL CODING TOOL</text>
+  <text x="525" y="420" font-family="system-ui, sans-serif" font-size="27" fill="#50635E">Two independent read-only judgments on a proposed change.</text>
+</svg>
