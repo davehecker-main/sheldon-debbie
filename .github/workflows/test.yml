@@ -11,3 +11,4 @@ jobs:
       - run: node tests/frontmatter.mjs
       - run: sh tests/profile-selection.sh
       - run: node tests/contracts.mjs
+      - run: node --test tests/consult-wire.mjs
