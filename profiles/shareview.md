@@ -33,7 +33,7 @@ let them weigh whose words are whose.
 
 When Dave typed the command with an argument, the harness substitutes his message into the
 fence below — the placeholder must live in THIS file for that to happen
-(`tests/ui/consultwire.test.jsx` pins it). Pass it on under this exact header:
+(`tests/consult-wire.mjs` pins it). Pass it on under this exact header:
 
 Dave typed this, verbatim:
 

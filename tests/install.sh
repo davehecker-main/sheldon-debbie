@@ -33,4 +33,5 @@ CLAUDE_HOME="$tmp_dir/claude" CODEX_HOME="$tmp_dir/codex" XDG_STATE_HOME="$tmp_d
 printf 'local conflict\n' >> "$command_file"
 CLAUDE_HOME="$tmp_dir/claude" CODEX_HOME="$tmp_dir/codex" XDG_STATE_HOME="$tmp_dir/state" "$repo_dir/scripts/install.sh" >/dev/null
 find "$tmp_dir/state/personal-tools/backups/sheldon-debbie" -type f -name 'commands-consult.md' | grep . >/dev/null
+CONSULT_COMMAND_FILE="$command_file" node --test "$repo_dir/tests/consult-wire.mjs"
 printf 'sheldon-debbie: install smoke test passed\n'
