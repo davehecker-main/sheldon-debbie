@@ -39,9 +39,8 @@ const ticks = lines[open].match(/^`+/)[0].length;
 assert.ok(ticks >= 4, "fence shorter than four backticks");
 assert.ok(lines.slice(at + 1).some((line) => new RegExp("^" + String.fromCharCode(96) + "{" + ticks + ",}$").test(line)), "fence is unterminated");
 for (const pattern of [
-  /answer must appear in the main conversation thread/i,
-  /transcript pane is not the user-visible reply/i,
-  /emit one assistant response in the parent session/i,
+  /consults are not relayed in chat/i,
+  /originating thread for a `DROP`/i,
   /do not end the\s+slash-command turn until/i,
   /subagent_type: "shareview-debbie"/,
   /subagent_type: "shareview-sheldon"/,

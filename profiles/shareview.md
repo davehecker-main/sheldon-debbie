@@ -73,15 +73,14 @@ listed source.
 
 ## Relaying the answers back
 
-**The answer must appear in the main conversation thread.** Finishing the `Agent` or
-`SendMessage` calls is not completion: a transcript pane is not the user-visible reply.
-After both calls return, emit one assistant response in the parent session whose body
-begins with Debbie's block followed by Sheldon's, and do not end the
-slash-command turn until that response has been sent.
+**Consults are not relayed in chat** (`AGENTS.md` rule 15). Finishing the `Agent` or
+`SendMessage` calls is not completion: after both return, post Debbie's block
+followed by Sheldon's, unaltered, wherever the process rule sends them — the issue's
+`## Debbie and Sheldon` section (`QA-PROCESS.md`, "Filing an issue"), or the
+originating thread for a `DROP`. Do not end the slash-command turn until that post is
+made. The parent session's chat reply carries only the outcome, plus genuine
+disagreement in at most two sentences.
 
-- **Paste both blocks unaltered.** A paraphrased or dropped block counts as a failed consult
-  (`AGENTS.md` rule 15).
-- **After the blocks: nothing**, except genuine disagreement in at most two sentences.
-- **The blocks never leave chat**, with one exception: the `## Debbie and Sheldon` section of
-  an issue we file (`QA-PROCESS.md`, "Filing an issue").
+- **Paste both blocks unaltered**, wherever they land. A paraphrased or dropped block
+  counts as a failed consult.
 - **Their findings are proposals.** Nothing in them authorizes an edit.
